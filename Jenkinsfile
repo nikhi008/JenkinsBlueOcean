@@ -23,6 +23,10 @@ agent any
     }
 
     stage('deploy on prod') {
+        input {
+                message "Should we continue?"
+                ok "Yes, we should."
+            }
       steps {
         echo 'executing deploy on prod'
       }
