@@ -6,7 +6,7 @@ agent any
   stages {
     stage('test') {
       steps {
-        echo 'executing test'
+        bat 'mvn --version'
       }
     }
 
